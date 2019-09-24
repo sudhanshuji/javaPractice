@@ -1,0 +1,43 @@
+package operationsImpl;
+
+import entity.Stack;
+import operations.StackOperations;
+
+public class StackOperationsImpl implements StackOperations {
+	private Stack stack;
+
+	public StackOperationsImpl(Stack stack) {
+		this.stack = stack;
+	}
+
+	@Override
+	public void push(String arg) {
+		   
+
+	}
+
+	@Override
+	public String pop() {
+		   
+		return null;
+	}
+
+	@Override
+	public Boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int length() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void listAllElements() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

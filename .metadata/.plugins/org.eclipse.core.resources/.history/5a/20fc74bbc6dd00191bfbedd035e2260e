@@ -1,0 +1,13 @@
+package programmingExcercises;
+
+public class AdditionThroughException extends Exception {
+	
+
+}
+	public void checkArgument()
+	public static void main(String[] args) {
+
+		
+	}
+
+

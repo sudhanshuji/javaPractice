@@ -1,0 +1,26 @@
+package inheritance.service;
+
+public class Car extends MotorVehicle {
+
+	int discountRate;
+	
+    public Car(String modelName,int modelNumber,int modelPrice,int discountRate) {
+    	this.modelName=modelName;
+    	this.modelNumber=modelNumber;
+    	this.modelPrice=modelPrice;
+    	this.discountRate=discountRate;
+    }
+	public void discount() {
+		 int discount=modelPrice*(discountRate/100);
+		 System.out.println("discount is : "+discount);
+	}
+
+	public void display() {
+		
+		System.out.println("Car Name : "+modelName);
+		System.out.println("Car Model : "+modelNumber);
+		System.out.println("Car Price : "+modelPrice);
+		System.out.println("discount Rate : "+20);
+
+	}
+}

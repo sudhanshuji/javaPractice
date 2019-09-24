@@ -1,0 +1,14 @@
+package File.Handling;
+
+import java.io.*;
+
+public class FileOutput {
+
+	public static void main(String[] args) {
+
+		FileInputStream f1=new FileInputStream(D:\/Golu.names);
+		
+		
+	}
+
+}

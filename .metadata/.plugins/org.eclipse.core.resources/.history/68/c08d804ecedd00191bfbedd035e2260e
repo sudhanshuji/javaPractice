@@ -1,0 +1,18 @@
+package programmingExcercises;
+
+public class CheckArgumentsClient {
+
+	public static void main(String[] args) throws CheckArgumentException {
+
+		if (args.length < 5) {
+			throw new CheckArgumentException("NUmber of arguments can't be less than five");
+		} else {
+			int sum=0;
+			for(int l=0;l<3;l+2) {
+				
+			}
+			System.out.println(args[l]);
+		}
+	}
+
+}

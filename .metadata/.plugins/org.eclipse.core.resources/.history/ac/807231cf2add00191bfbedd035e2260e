@@ -1,0 +1,36 @@
+package File.Handling;
+
+import java.io.*;
+
+public class FileOutput {
+	private static void readfile() {
+
+		String line = "";
+
+		try {
+
+			FileReader reader = new FileReader("D:\\Golu\\names.txt");
+			BufferedReader br = new BufferedReader(reader);
+
+			line = br.readLine();
+			while (line != null) {
+				System.out.println("Names are : " + line);
+				line = br.readLine();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private static void writeToFile() {
+		FileWriter wirter=new FileWriter("D:\\Golu\\names1.txt");
+	}
+
+	public static void main(String[] args) {
+		readfile();
+
+	}
+
+}

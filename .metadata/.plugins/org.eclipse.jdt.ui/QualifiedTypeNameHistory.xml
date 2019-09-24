@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="practice.MathOpertions"/>
+<fullyQualifiedTypeName name="practcie.entity.ComplexNumbers"/>
+<fullyQualifiedTypeName name="practcie.service.ComplexNumbersOperatipons"/>
+<fullyQualifiedTypeName name="practcie.entity.ComplexNumber"/>
+<fullyQualifiedTypeName name="ractangle.entity.Rectangle"/>
+<fullyQualifiedTypeName name="rectangle.operations.RectangleOperations"/>
+<fullyQualifiedTypeName name="circle.service.CircleOperations"/>
+<fullyQualifiedTypeName name="circle.entity.Circle"/>
+<fullyQualifiedTypeName name="complexNumberProject.CoplexNumberArray"/>
+<fullyQualifiedTypeName name="complexNumberArrayService.ComplexNumberArrayOperations"/>
+<fullyQualifiedTypeName name="complexNumberArray.client.ComplexNumberArrayclient"/>
+<fullyQualifiedTypeName name="inheritance.service.MotorVehicle"/>
+<fullyQualifiedTypeName name="inhetritance2.service.Department"/>
+<fullyQualifiedTypeName name="inhetritance2.service.College"/>
+<fullyQualifiedTypeName name="inhetritance2.service.FacultyMember"/>
+<fullyQualifiedTypeName name="inheritance4.service.Employee"/>
+<fullyQualifiedTypeName name="com.sun.javafx.css.CalculatedValue"/>
+<fullyQualifiedTypeName name="inheritance4.service.PartTimeEmployee"/>
+<fullyQualifiedTypeName name="inheritance4.service.FullTimeEmployee"/>
+<fullyQualifiedTypeName name="inheritance3.service.SavingAccount"/>
+<fullyQualifiedTypeName name="inheritance3.service.CurrentAccount"/>
+<fullyQualifiedTypeName name="accounts.Client.AccountsClient"/>
+<fullyQualifiedTypeName name="accounts.entity.AccountsEntity"/>
+<fullyQualifiedTypeName name="java.beans.Customizer"/>
+<fullyQualifiedTypeName name="accounts.operations.AccountsOperations"/>
+<fullyQualifiedTypeName name="operations.implementations.AccountsOperationsImplementations"/>
+<fullyQualifiedTypeName name="java.awt.datatransfer.StringSelection"/>
+<fullyQualifiedTypeName name="strings.entity.StringsEntity"/>
+<fullyQualifiedTypeName name="strings.operations.StringOperations"/>
+<fullyQualifiedTypeName name="javax.print.attribute.TextSyntax"/>
+<fullyQualifiedTypeName name="classtester.Testing"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="javafx.beans.property.SetProperty"/>
+<fullyQualifiedTypeName name="jdk.nashorn.internal.objects.annotations.Setter"/>
+<fullyQualifiedTypeName name="javafx.beans.binding.SetExpression"/>
+<fullyQualifiedTypeName name="com.sun.beans.decoder.ValueObject"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+</qualifiedTypeNameHistroy>

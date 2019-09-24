@@ -1,0 +1,25 @@
+package stack.client;
+
+import java.util.Scanner;
+
+import entity.Stack;
+import operations.StackOperations;
+import operationsImpl.StackOperationsImpl;
+
+public class StackClient {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter your choice");
+		scan.next();
+		Stack stack = new Stack(5);
+		StackOperations obj = new StackOperationsImpl(stack);
+		obj.push("golu");
+		obj.listAllElements();
+		obj.pop();
+		System.out.println("Listing after pop operation");
+		obj.listAllElements();
+		System.out.println("Listing done");
+
+	}
+}

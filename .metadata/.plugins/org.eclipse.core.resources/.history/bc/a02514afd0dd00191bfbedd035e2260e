@@ -1,0 +1,15 @@
+package programmingExcercises;
+
+public class CheckingArgument {
+
+	
+	
+	
+
+	public boolean validateNumbers() {
+		//CheckingArgument argObj =new CheckingArgument();
+		
+		return false;
+	}
+
+}

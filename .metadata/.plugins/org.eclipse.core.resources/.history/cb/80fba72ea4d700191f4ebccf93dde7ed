@@ -1,0 +1,11 @@
+package operations;
+
+public interface StackOperations {
+	void push(String arg);
+	String pop();
+	Boolean isEmpty();
+	int length();
+	void listAllElements();
+
+}
+

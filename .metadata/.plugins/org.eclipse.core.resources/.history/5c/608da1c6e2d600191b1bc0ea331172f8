@@ -1,0 +1,14 @@
+package entity;
+
+
+public class Stack {
+  private sString arr[];
+
+public Stack() {
+	arr =new String [10];
+	
+	
+}
+  
+  
+}

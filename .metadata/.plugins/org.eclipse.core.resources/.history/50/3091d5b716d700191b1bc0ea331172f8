@@ -1,0 +1,47 @@
+package stack.client;
+
+import java.util.Scanner;
+
+import com.sun.java.util.jar.pack.Instruction.Switch;
+
+import entity.Stack;
+import operations.StackOperations;
+import operationsImpl.StackOperationsImpl;
+
+public class StackClient {
+
+	public static void main(String[] args) {
+		int i=0;
+		Scanner scan=new Scanner(System.in);
+		Scanner sc=new Scanner(System.in);
+		System.out.println("case 1 : push");
+		System.out.println("case 2 : pop");
+		System.out.println("case 3 : display");
+		System.out.println("case 4 : length");
+		System.out.println("case 5 : to check empty");
+		System.out.println("enter your choice");
+		sc.nextInt();
+		StackOperations obj = new StackOperationsImpl(stack);
+		Switch(sc){
+		//Stack stack = new Stack(5);
+		case1: 
+			obj.push(scan.next());
+			break;
+		case3:
+			obj.listAllElements();
+			break;
+		case2:
+			obj.pop();
+			break;
+		case4:
+			obj.length();
+			 break;
+		case5:
+			obj.isEmpty();
+			 break;
+		}
+		sc.close();
+		scan.close();
+
+	}
+}

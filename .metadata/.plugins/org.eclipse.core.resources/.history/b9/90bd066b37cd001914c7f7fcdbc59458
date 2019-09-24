@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Prac {
+
+	public static void main(String[] args) {
+       System.out.println("type your name ");
+       Scanner h= new Scanner(System.in);
+      String name = h.nextLine();
+      System.out.println("hello"+ name);
+	}
+
+}

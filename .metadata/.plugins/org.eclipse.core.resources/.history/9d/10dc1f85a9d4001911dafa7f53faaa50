@@ -1,0 +1,32 @@
+package inheritance.entitty;
+
+class MotorVehicle {
+         
+         void display(String modelName,int modelNumber,int modelPrice  ){
+        	 System.out.println("Model Name : ");
+        	 System.out.println("Model Number : ");
+        	 System.out.println("Model price : ");
+         }
+
+
+
+class Car extends MotorVehicle {
+	
+	int discountRate;
+	
+	void discount(int discountRate) {
+		int discount=modelPrice*(discountRate/100);
+	}
+	void display(int discount){
+   	 super.display("BMW",786,4000000);
+   	 System.out.println("Discount Rate : "+discount);
+    }
+
+	public void main(String[] args) {
+		   Car c=new car();
+		   c.display("BMW",2345678,4000000);
+           c.discount(20);
+	}
+
+}
+}

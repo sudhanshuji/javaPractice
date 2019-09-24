@@ -1,0 +1,15 @@
+package queue.client;
+
+import java.util.Scanner;
+
+import entity.Stack;
+import queue.operationsImpl.QueueOperationsImpl;
+
+public class QueueClient {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+	}
+
+}

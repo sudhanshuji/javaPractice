@@ -1,0 +1,14 @@
+package strings.operations;
+
+public class StringOperations {
+	
+	public int countWords(String sentence) {
+		int length1=sentence.length();
+		String newString=sentence.trim();
+		int length2=newString.length();
+		int length=length1-length2;
+		
+		return length;
+	}
+
+}

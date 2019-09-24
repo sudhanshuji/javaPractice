@@ -1,0 +1,16 @@
+package question4;
+
+public class MoneyClient {
+
+	public static void main(String[] args) {
+         Money obj1=new Money(100.00f,0.25f);
+         float a=obj1.addition(5.90f,0.25f);
+         System.out.println(a);
+         Money obj2=new Money(100.00f,0.25f);
+         float b=obj2.subtraction(5.0f,0.25f);
+        		 System.out.println(b);
+         
+         
+	}
+
+}

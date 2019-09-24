@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		int start = 199;
+		for(int i = start; i>=0; ) {
+			int next = i-2;
+			System.out.println(i+"x"+i+" | 3x3 > "+next+"x"+next);
+			i=next;
+		}
+	}
+
+}

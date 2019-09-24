@@ -1,0 +1,13 @@
+package programmingExcercises;
+
+import exceptions.CheckArgumentException;
+
+public class CheckArgumentsClient {
+
+	public static void main(String[] args) throws CheckArgumentException {
+
+		CheckingArgument boj = new CheckingArgument();
+		boj.validateNumbers(args);
+	}
+
+}

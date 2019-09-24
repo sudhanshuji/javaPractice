@@ -1,0 +1,17 @@
+package programmingExcercises;
+
+import exceptions.CheckArgumentException;
+
+public class CheckArgumentsClient {
+
+	public static void main(String[] args)  {
+
+		CheckingArgument boj = new CheckingArgument();
+		try {
+			boj.validateNumbers(args);
+		} catch (CheckArgumentException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

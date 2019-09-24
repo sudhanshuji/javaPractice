@@ -1,0 +1,80 @@
+package queue.operationsImpl;
+
+import queue.entity.Queue;
+
+public class QueueOperationsImplementation implements QueueOperations{
+	
+	private Queue queue;
+	
+	public QueueOperationsImplementation() {
+		
+	}
+	
+	public QueueOperationsImplementation(Queue queue) {
+		this.queue = queue;
+	}
+
+	public String push(String arg) {
+		int currIndex=queue.getCurrIndex();
+		if(length()-1==currIndex)
+		{
+			System.out.println("queue is already full");
+		}
+		else
+		{
+			String[] arr=queue.getQueue();
+			currIndex=currIndex+1;
+			arr[currIndex]=arg;
+			queue.setCurrIndex(currIndex);
+			queue.setQueue(arr);
+		}
+		
+		return arg;
+	}
+
+
+	public String pop() {
+		
+			/*
+			 * 1.check the size of the queue.
+			 * 2.if queue is empty,show the empty message.
+			 * 3.else get the first element of the queue.
+			 * 4.remove it.
+			 * 5.set currIndex=currIndex-1.
+			 * 6.return it.
+			 */
+		  int currIndex=queue.getCurrIndex();
+		  if(currIndex=-1)
+		  {
+			  System.out.println("queue is empty");
+		  }
+		  else
+		  {
+			  String[] arr=queue.getQueue();
+			  String element=arr[(length()-2)-currIndex];
+			  arr[(length()-2)-currIndex]=arr[(length()-1)-currIndex];
+		  }
+		  
+		  return null;
+	}
+
+	@Override
+	public Boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int length() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void listAllElements() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

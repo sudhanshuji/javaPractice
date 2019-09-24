@@ -1,0 +1,7 @@
+package programmingExcercises;
+
+public class CheckArgumentException extends Exception() {
+	
+	
+}
+

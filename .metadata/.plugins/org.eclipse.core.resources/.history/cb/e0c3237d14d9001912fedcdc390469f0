@@ -1,0 +1,5 @@
+package accounts.entity;
+
+public class AccountsEntity {
+
+}

@@ -1,0 +1,19 @@
+package question4;
+
+public class Money {
+	float paisa;
+	float rupee;
+	Money(float rupee,float paisa){
+		this.rupee=rupee;
+		this.paisa=paisa;
+	}
+	float addition(float paisa) {
+		sum=rupee+paisa;
+		return sum;
+	}
+	float subtraction(float paisa) {
+		sub=rupee-paisa;
+		return sub;
+	}
+
+}

@@ -1,0 +1,12 @@
+package programmingExcercises;
+
+import exceptions.CheckArgumentException;
+
+public class CheckArgumentsClient {
+
+	public static void main(String[] args) throws CheckArgumentException {
+
+		
+	}
+
+}

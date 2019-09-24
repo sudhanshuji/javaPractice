@@ -1,0 +1,10 @@
+package queue.operations;
+
+public interface QueueOperations {
+
+	String push(String arg);
+	String pop();
+	Boolean isEmpty();
+	int length();
+	void listAllElements();
+}
