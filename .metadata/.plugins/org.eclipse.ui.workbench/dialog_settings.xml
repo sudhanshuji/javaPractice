@@ -17,11 +17,23 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
+		<item value="org.eclipse.wst.jsdt.ui.NewJSWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.jsdt.ui.java"/>
+		</list>
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<item value="true" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="D:\Golu\Java Assignments\MCTP\MCTP_Assignment5\Assignment5"/>
+			<item value="D:\Golu\Java Assignments\MCTP\MCTP_Assignment5\Assignment5\src\com\mindtree\assignment5"/>
 		</list>
 	</section>
 </section>

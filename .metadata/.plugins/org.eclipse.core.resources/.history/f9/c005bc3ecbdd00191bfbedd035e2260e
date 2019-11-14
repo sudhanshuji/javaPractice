@@ -1,9 +1,0 @@
-package programmingExcercises;
-
-public class CheckArgumentException extends Exception {
-
-	public CheckArgumentException() {
-		super();
-	}
-	
-}

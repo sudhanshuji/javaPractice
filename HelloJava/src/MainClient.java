@@ -9,7 +9,7 @@ public class MainClient {
 		Scanner scanner = new Scanner(System.in);
 		
 		int v = 2;
-		System.out.println("Enter a String :");
+		System.out.println("Enter a Number :");
 		v  = scanner.nextInt();
 		int sqr = square(v);
 		System.out.println(" "+sqr+" "+sqr);

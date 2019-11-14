@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Divide</h2>
+	<p>We are practicing JavaSCrpy</p>
+	<div>Hello WOrld</div>
+
+	<br>
+	<form>
+		a: <input type="number" name="a" id="a"><br> b: <input
+			type="number" name="b" id="b"><br> 
+			<input type="button" value="Divide" onclick="divide()">
+	</form>
+
+	<div id="resultdiv">
+
+		<span id="result">Result will appear here</span>
+	</div>
+	<script>
+		function divide() {
+			var a = document.getElementById('a').value;
+			var b = document.getElementById('b').value;
+			var sum = parseInt(a) / parseInt(b);
+			document.getElementById('result').innerHTML = "Result is " + sum
+
+		}
+	</script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.junit.launchconfig">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/MCE_Testing_Assignment1/src/com/mindtree/assignment1/question1/StringHandlingTest.java"/>
+<listEntry value="/MCE_Testing_Assignment1/src/com/assignment1/question1/StringHandlingTest.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
@@ -10,7 +10,7 @@
 <booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
 <stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value="UTC01_01"/>
 <stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit4"/>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.mindtree.assignment1.question1.StringHandlingTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.assignment1.question1.StringHandlingTest"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="MCE_Testing_Assignment1"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-ea"/>
 </launchConfiguration>

@@ -16,8 +16,11 @@ public class FileOutput {
 			boolean check;
 
 			line = br.readLine();
-			
+			int counter =1;
 			while (line != null) {
+				if(counter===1) {
+					
+				}
 				if (line.contains("it") || line.contains("cs") || line.contains("ex")) {
 					check = true;
 					System.out.println("Valid code");
@@ -28,6 +31,7 @@ public class FileOutput {
 				if (check)
 				System.out.println("Names are : " + line);
 				line = br.readLine();
+				counter++;
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

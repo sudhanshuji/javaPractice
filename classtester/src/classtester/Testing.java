@@ -81,20 +81,43 @@ public class Testing {
 			words2[l]=words1[l];
 		}
 		for(l=0;l<traceSpace(string);l++)
+			
 		System.out.print(" "+words2[l]);
 	for(l=0;l<traceSpace(string);l++) {
 		int len= words2[l].length();
 		words3[l]="";
-		for(int j=words2[l].length();j>=0;j++) {
-		      words3[l].charAt(len)+=words2[l].charAt(j);
-			len--;
+		for(int j=0;j<=words2[l].length();j++) {
+			words3[l].charAt(j  )+=words2[l].charAt(len);
+		len--;
 		}
 		System.out.print(" "+words3[l]);
-		}
+	}
 }
 		
 		
-	
+	private static void rev(String string) {
+		System.out.println("");
+		String[] array = new String[traceSpace(string)];
+		
+		for(int i = 0, j = 0; i < string.length(); i++) {
+			if(array[j]==null)
+				array[j]="";
+			if(string.charAt(i)!=' ') {
+				array[j]+=string.charAt(i);
+			}
+			if(string.charAt(i) == ' ') j++;
+		}
+		
+		for (int i = 0; i < array.length; i++) {
+			for(int j = array[i].length()-1; j >= 0; j--) {
+				
+				System.out.print(array[i].charAt(j));
+				
+			}
+			System.out.print(" ");
+		}
+		
+	}
 	
 	public static void main(String[] args) {
 		traceChar(string);
@@ -104,7 +127,7 @@ public class Testing {
 		reaverse(string);
 		reverseEach(string);
 		reverseEach1(string);
-
+		rev(string);
 	}
 
 	
