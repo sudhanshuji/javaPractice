@@ -31,9 +31,14 @@
 		<url-pattern>/getCategories</url-pattern>
 	</servlet-mapping>
 
-<servlet-mapping>
+	<servlet-mapping>
 		<servlet-name>PlayerController</servlet-name>
 		<url-pattern>/getTeamName</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>PlayerController</servlet-name>
+		<url-pattern>/setPlayerDetails</url-pattern>
 	</servlet-mapping>
 
 

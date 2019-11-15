@@ -50,6 +50,7 @@ public class PlayerManagerImpl implements PlayerManager {
 					return "Player Added successfully";
 				}
 			} catch (DaoException ex) {
+				ex.printStackTrace();
 				throw new ServiceException(ex);
 			}
 

@@ -65,7 +65,48 @@ public class PlayerController extends HttpServlet {
 			getCategories(request, response);
 		} else if (request.getRequestURI().contains("getTeamName")) {
 			getTeamName(request, response);
+		} else if (request.getRequestURI().contains("setPlayerDetails")) {
+			setPlayerDetails(request, response);
 		}
+	}
+
+	private void setPlayerDetails(HttpServletRequest request, HttpServletResponse response) {
+		Gson gson = new Gson();
+		ResponseDto responseDto = new ResponseDto();
+		List<String> errors = new ArrayList<>();
+		responseDto.setId("pas.setPlayerDetails");
+		String result = "";
+		String playerName = request.getParameter("playerName");
+		String category = request.getParameter("category");
+		Integer highestScore = Integer.parseInt(request.getParameter("highestScore"));
+		String bestFigure = request.getParameter("bestFigure");
+		String teamName = request.getParameter("teamName");
+		Team team = new Team();
+		team.setTeamName(teamName);
+		Player player = new Player(0, playerName, category, highestScore, bestFigure, team);
+
+		try {
+			result = playerManager.insertPlayer(player);
+
+		} catch (ServiceException e) {
+			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+			errors.add(e.getMessage());
+		}
+		responseDto.setData(result);
+		responseDto.setError(errors);
+
+		String responseJson = gson.toJson(responseDto);
+
+		response.setContentType("application/json");
+		PrintWriter writer = null;
+		try {
+			writer = response.getWriter();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		writer.append(responseJson);
+
 	}
 
 	private void getTeamName(HttpServletRequest request, HttpServletResponse response) throws IOException {
