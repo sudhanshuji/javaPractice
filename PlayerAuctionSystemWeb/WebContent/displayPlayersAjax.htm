@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body onload="loadData()">
+	<h1>Display Player AJAX</h1>
+	<form action="">
+		<table>
+
+			<tr>
+				<td><label>Team Name</label></td>
+				<td>:</td>
+				<td>
+					<!--  <input id="teamName" placeholder="teamName" type="text"
+					name="teamName" onfocusout="validateTeamName()">--> <select
+					id="teamName" placeholder="teamName" type="text" name="teamName"
+					onfocusout="validateTeamName()" onchange="getPlayerData()">
+
+				</select>
+
+				</td>
+				<td><span id="errorTeamName"></span></td>
+			</tr>
+			<tr>
+				<td><input type="button" id="mysubmit" value="Submit"
+					onclick="getPlayerData()"></td>
+				<td></td>
+				<td><input type="reset" value="Reset"></td>
+			</tr>
+		</table>
+	</form>
+
+	<div id="result">Result will be displayed here</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/displayPlayerAjax.js"></script>
+
+</body>
+</html>

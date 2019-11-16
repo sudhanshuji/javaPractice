@@ -35,11 +35,15 @@
 		<servlet-name>PlayerController</servlet-name>
 		<url-pattern>/getTeamName</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet-mapping>
 		<servlet-name>PlayerController</servlet-name>
 		<url-pattern>/setPlayerDetails</url-pattern>
 	</servlet-mapping>
 
+	<servlet-mapping>
+		<servlet-name>PlayerController</servlet-name>
+		<url-pattern>/displayPlayerDetails</url-pattern>
+	</servlet-mapping>
 
 </web-app>

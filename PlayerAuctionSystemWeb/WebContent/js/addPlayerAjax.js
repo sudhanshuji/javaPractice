@@ -177,7 +177,7 @@ function setPlayerData() {
 	// category : category,
 	// highestScore : highestScore,
 	// bestFigure : bestFigure,
-	// teamName : teamName
+	// teamName : teamNamet
 	// }
 	console.log(player);
 	// practice $.ajax yourself

@@ -60,6 +60,7 @@ public class PlayerController extends HttpServlet {
 		if (request.getRequestURI().contains("addPlayer")) {
 			addPlayer(request, response);
 		} else if (request.getRequestURI().contains("/displayPlayers")) {
+			System.out.println("hello");
 			displayPlayers(request, response);
 		} else if (request.getRequestURI().contains("getCategories")) {
 			getCategories(request, response);
@@ -67,7 +68,40 @@ public class PlayerController extends HttpServlet {
 			getTeamName(request, response);
 		} else if (request.getRequestURI().contains("setPlayerDetails")) {
 			setPlayerDetails(request, response);
+		} else if (request.getRequestURI().contains("displayPlayerDetails")) {
+			System.out.println("got ajax request data");
+			displayPlayerDetails(request, response);
 		}
+	}
+
+	private void displayPlayerDetails(HttpServletRequest request, HttpServletResponse response) {
+
+		Gson gson = new Gson();
+		String teamName = request.getParameter("teamName");
+		ResponseDto responseDto = new ResponseDto();
+		responseDto.setId("pas.displayPlayerDetails");
+		List<String> errors = new ArrayList<>();
+		List<PlayerDto> list = new ArrayList<PlayerDto>();
+
+		try {
+			list = teamManager.fetchPlayerByTeam(teamName);
+
+		} catch (ServiceException e) {
+			response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+			errors.add(e.getMessage());
+		}
+		responseDto.setData(list);
+		responseDto.setError(errors);
+		String playerDetailsJson = gson.toJson(responseDto);
+		System.out.println("Response is " + playerDetailsJson);
+		try {
+			response.setContentType("application/json");
+			PrintWriter writer = response.getWriter();
+			writer.append(playerDetailsJson);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
 	private void setPlayerDetails(HttpServletRequest request, HttpServletResponse response) {
